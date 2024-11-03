@@ -1,6 +1,5 @@
 
 ## Solving Case 1
-==============
 
 **Mesh 10x10:**
 Dirichlet conditions satisfied: False
@@ -38,7 +37,7 @@ Neumann conditions satisfied:
   top: False
 
 ## Solving Case 2
-==============
+
 **Mesh 10x10:**
 Dirichlet conditions satisfied: False
 Neumann conditions satisfied:
