@@ -12,7 +12,7 @@ from matplotlib.ticker import AutoMinorLocator
 """
 ほぼ全部書き直した 
 
-domainの違いかNeumann境界での問題かも知れないけど解の誤差がむしろ増加している。
+domainの違いかNeumann境界での問題かは知らないけど解の誤差がむしろ増加している。
 正直わからん
 """
 
