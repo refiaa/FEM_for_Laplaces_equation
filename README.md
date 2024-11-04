@@ -80,4 +80,30 @@ Neumann conditions satisfied:
   right: True
   top: True
 
+---
+
+INFO:__main__:
+Solving 2-element case:
+INFO:__main__:Center point value: 0.048214
+INFO:__main__:Relative error: 34.55%
+INFO:__main__:
+Solving 8-element case:
+INFO:__main__:Center point value: 0.045953
+INFO:__main__:Relative error: 37.62%
+INFO:__main__:
+Solving 18-element case:
+INFO:__main__:Center point value: 0.045576
+INFO:__main__:Relative error: 38.14%
+
+Solving 2-element case:
+Center point value: 0.048214
+Error vs exact: 34.55%
+
+Solving 8-element case:
+Center point value: 0.045953
+Error vs exact: 37.62%
+
+Solving 18-element case:
+Center point value: 0.045576
+Error vs exact: 38.14%
 
