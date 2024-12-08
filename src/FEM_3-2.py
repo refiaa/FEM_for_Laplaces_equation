@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import scipy.sparse as sp
 import scipy.sparse.linalg as spla
@@ -295,6 +296,9 @@ def main():
     ny = 400
     sigma_applied = 100.0
 
+    output_dir = "./output"
+    os.makedirs(output_dir, exist_ok=True)
+
     material = Material(E, nu)
     mesh = Mesh(width, height, nx, ny, hole_center, hole_radius)
 
@@ -318,7 +322,7 @@ def main():
     plt.title('Sigma_x Contour (Problem 2, Hole at bottom-left)')
     plt.xlabel('x [m]')
     plt.ylabel('y [m]')
-    plt.savefig("problem2_sigma_x_contour.png", dpi=300)
+    plt.savefig(os.path.join(output_dir, "problem2_sigma_x_contour.png"), dpi=300)
     plt.close()
 
     plt.figure(figsize=(6,12))
@@ -327,7 +331,7 @@ def main():
     plt.title('Ux Contour (Problem 2, Hole at bottom-left)')
     plt.xlabel('x [m]')
     plt.ylabel('y [m]')
-    plt.savefig("problem2_ux_contour.png", dpi=300)
+    plt.savefig(os.path.join(output_dir, "problem2_ux_contour.png"), dpi=300)
     plt.close()
 
     line_x = hole_center[0]
@@ -345,7 +349,7 @@ def main():
     plt.title('Sigma_x Distribution along Vertical Line (Hole at bottom-left)')
     plt.grid(True)
     plt.legend()
-    plt.savefig("problem2_sigma_x_lineplot.png", dpi=300)
+    plt.savefig(os.path.join(output_dir, "problem2_sigma_x_lineplot.png"), dpi=300)
     plt.close()
 
 if __name__ == "__main__":
