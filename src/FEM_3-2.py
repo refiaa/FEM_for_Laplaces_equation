@@ -22,8 +22,7 @@ class Material:
         return d_mat
 
 class Mesh:
-    def __init__(self, width: float, height: float, nx: int, ny: int,
-                 hole_center: Tuple[float, float], hole_radius: float):
+    def __init__(self, width: float, height: float, nx: int, ny: int, hole_center: Tuple[float, float], hole_radius: float):
         self.width = width
         self.height = height
         self.nx = nx
