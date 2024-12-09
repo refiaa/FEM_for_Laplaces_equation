@@ -291,8 +291,8 @@ def main():
 
     hole_center = (0, 0)
     hole_radius = 1
-    nx = 200
-    ny = 400
+    nx = 40
+    ny = 80
     sigma_applied = 100.0
 
     output_dir = "./output"
